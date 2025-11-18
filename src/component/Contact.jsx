@@ -9,7 +9,6 @@ const Contact = () => {
       className="w-full bg-[#DA5A42] text-white px-6 sm:px-10 md:px-20 py-16 md:py-20"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
-        {/* IMAGE POP UP */}
         <motion.div
           className="order-1 md:order-2"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -23,8 +22,6 @@ const Contact = () => {
             className="w-full rounded-lg shadow-lg object-cover"
           />
         </motion.div>
-
-        {/* TEXT FADE UP */}
         <motion.div
           className="order-2 md:order-1"
           initial={{ opacity: 0, y: 40 }}
@@ -32,7 +29,6 @@ const Contact = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          {/* GARIS + TITLE */}
           <motion.div
             className="flex items-center gap-3 mb-4 md:mb-5"
             initial={{ opacity: 0, y: 40 }}
@@ -75,8 +71,6 @@ const Contact = () => {
           >
             The perfect sound for your event is just a call away.
           </motion.p>
-
-          {/* BUTTON FADE UP */}
           <motion.a
             href="#footer"
             className="inline-block mt-6 md:mt-8 px-8 py-3 border border-white rounded-md 
